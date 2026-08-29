@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دراجتك - سوق الدراجات الأول في اليمن</title>
+  <meta name="description" content="تطبيق دراجتك - سوق بيع وشراء الدراجات النارية والهوائية. أضف إعلانك وتواصل مع البائعين بسهولة. الإعلانات القريبة منك، محادثات فورية، تقييم البائعين.">
+  <meta name="theme-color" content="#1A5276">
+  <meta property="og:title" content="دراجتك - سوق الدراجات الأول">
+  <meta property="og:description" content="بيع واشتري دراجتك النارية أو الهوائية بسهولة. تصفح آلاف الإعلانات وتواصل مع البائعين مباشرة.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A5276'/><g transform='translate(4 4)'><path fill='white' d='M19.44 9.03 15.41 5H11v2h3.59l2 2H5c-2.8 0-5 2.2-5 5s2.2 5 5 5c2.46 0 4.45-1.69 4.9-4h1.65l2.77-2.77c-.21.54-.32 1.14-.32 1.77 0 2.8 2.2 5 5 5s5-2.2 5-5c0-2.79-2.2-4.97-4.56-4.97zM7.82 15C7.4 16.15 6.28 17 5 17c-1.63 0-3-1.37-3-3s1.37-3 3-3c1.28 0 2.4.85 2.82 2H5v2h2.82zM19 17c-1.63 0-3-1.37-3-3s1.37-3 3-3 3 1.37 3 3-1.37 3-3 3z'/></g></svg>">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="/" class="nav-logo">
+      <span class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.44 9.03 15.41 5H11v2h3.59l2 2H5c-2.8 0-5 2.2-5 5s2.2 5 5 5c2.46 0 4.45-1.69 4.9-4h1.65l2.77-2.77c-.21.54-.32 1.14-.32 1.77 0 2.8 2.2 5 5 5s5-2.2 5-5c0-2.79-2.2-4.97-4.56-4.97zM7.82 15C7.4 16.15 6.28 17 5 17c-1.63 0-3-1.37-3-3s1.37-3 3-3c1.28 0 2.4.85 2.82 2H5v2h2.82zM19 17c-1.63 0-3-1.37-3-3s1.37-3 3-3 3 1.37 3 3-1.37 3-3 3z"/></svg>
+      </span>
+      دراجتك
+    </a>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">المميزات</a></li>
+      <li><a href="#how-it-works">كيف يعمل</a></li>
+      <li><a href="#screenshots">معرض التطبيق</a></li>
+      <li><a href="#faq">الأسئلة الشائعة</a></li>
+      <li><a href="#download" class="nav-cta">تحميل التطبيق</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <span class="grid-overlay"></span>
+  </div>
+  <div class="container">
+    <div class="hero-content reveal">
+      <span class="hero-badge">
+        <span class="dot"></span> سوق الدراجات الأول في اليمن
+      </span>
+      <h1>بيع واشتري <span class="highlight">دراجتك</span> في دقائق</h1>
+      <p>تصفّح آلاف الإعلانات للدراجات النارية والهوائية، تواصل مع البائعين مباشرة، وشوف الإعلانات القريبة منك — كل ذلك من تطبيق واحد سريع وآمن.</p>
+      <div class="hero-buttons">
+        <a href="#download" class="btn btn-primary btn-lg">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M3.6 1.8 13 11.2l2.6-2.6L4.9 2.5C4.5 2.2 4 2 3.6 1.8zM2.3 2.9C2.1 3.2 2 3.6 2 4v16c0 .4.1.8.3 1.1L11.6 12 2.3 2.9zm14.9 6.9 2.9 1.7c1.2.7 1.2 2.4 0 3.1l-2.9 1.7L14.4 13l2.8-3.2zM4.9 21.5l10.7-6.1L13 12.8l-9.4 9.4c.4-.2.9-.4 1.3-.7z"/></svg>
+          تحميل من قوقل بلاي
+        </a>
+        <a href="#features" class="btn btn-ghost">استكشف المميزات</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-stars">
+          <strong>مجاناً</strong> <span>نشر الإعلان وتصفّح السوق</span>
+        </div>
+        <div class="trust-avatars" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <em>محادثة مباشرة مع البائع</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone mockup -->
+    <div class="hero-image reveal" style="--delay:.15s">
+      <div class="phone-float">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="app-ui">
+              <div class="ui-statusbar">
+                <span>9:41</span>
+                <span class="ui-dots"><i></i><i></i><i></i></span>
+              </div>
+              <div class="ui-topbar">
+                <div class="ui-loc">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+                  صنعاء
+                </div>
+                <div class="ui-avatar"></div>
+              </div>
+              <div class="ui-search">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+                ابحث عن دراجتك...
+              </div>
+              <div class="ui-chips">
+                <span class="active">الكل</span>
+                <span>نارية</span>
+                <span>هوائية</span>
+                <span>سكوتر</span>
+              </div>
+              <div class="ui-card">
+                <div class="ui-card-img c1">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="42" height="42"><path d="M19.44 9.03 15.41 5H11v2h3.59l2 2H5c-2.8 0-5 2.2-5 5s2.2 5 5 5c2.46 0 4.45-1.69 4.9-4h1.65l2.77-2.77c-.21.54-.32 1.14-.32 1.77 0 2.8 2.2 5 5 5s5-2.2 5-5c0-2.79-2.2-4.97-4.56-4.97zM7.82 15C7.4 16.15 6.28 17 5 17c-1.63 0-3-1.37-3-3s1.37-3 3-3c1.28 0 2.4.85 2.82 2H5v2h2.82zM19 17c-1.63 0-3-1.37-3-3s1.37-3 3-3 3 1.37 3 3-1.37 3-3 3z"/></svg>
+                  <span class="ui-tag">قريب · 2.3 كم</span>
+                </div>
+                <div class="ui-card-body">
+                  <strong>هوندا CB 150 — 2021</strong>
+                  <div class="ui-price">850,000 ريال</div>
+                </div>
+              </div>
+              <div class="ui-card">
+                <div class="ui-card-img c2">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="42" height="42"><path d="M19.44 9.03 15.41 5H11v2h3.59l2 2H5c-2.8 0-5 2.2-5 5s2.2 5 5 5c2.46 0 4.45-1.69 4.9-4h1.65l2.77-2.77c-.21.54-.32 1.14-.32 1.77 0 2.8 2.2 5 5 5s5-2.2 5-5c0-2.79-2.2-4.97-4.56-4.97zM7.82 15C7.4 16.15 6.28 17 5 17c-1.63 0-3-1.37-3-3s1.37-3 3-3c1.28 0 2.4.85 2.82 2H5v2h2.82zM19 17c-1.63 0-3-1.37-3-3s1.37-3 3-3 3 1.37 3 3-1.37 3-3 3z"/></svg>
+                  <span class="ui-tag">قريب · 4.1 كم</span>
+                </div>
+                <div class="ui-card-body">
+                  <strong>ياماها YZF — 2020</strong>
+                  <div class="ui-price">1,200,000 ريال</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Floating badges -->
+        <div class="float-badge fb-chat">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+          <div><strong>رسالة جديدة</strong><span>البائع متصل الآن</span></div>
+        </div>
+        <div class="float-badge fb-rating">
+          <span class="fb-star">★</span>
+          <div><strong>تقييم البائعين</strong><span>بعد كل عملية بيع</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,90 720,0 1080,30 C1260,45 1380,55 1440,40 L1440,80 L0,80 Z"></path></svg>
+  </div>
+</section>
+
+<!-- Brands marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>ياماها</span><span>هوندا</span><span>سوزوكي</span><span>كاواساكي</span><span>باجاج</span><span>TVS</span><span>سكوتر</span><span>دراجات هوائية</span>
+    <span>ياماها</span><span>هوندا</span><span>سوزوكي</span><span>كاواساكي</span><span>باجاج</span><span>TVS</span><span>سكوتر</span><span>دراجات هوائية</span>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="stat-number" data-count="6">0</div>
+        <div class="stat-label">قسم للدراجات وقطع الغيار</div>
+      </div>
+      <div class="stat-card reveal" style="--delay:.1s">
+        <div class="stat-number accent" data-count="19">0</div>
+        <div class="stat-label">ماركة مدعومة</div>
+      </div>
+      <div class="stat-card reveal" style="--delay:.2s">
+        <div class="stat-number" data-count="9">0</div>
+        <div class="stat-label">مدينة مغطاة</div>
+      </div>
+      <div class="stat-card reveal" style="--delay:.3s">
+        <div class="stat-number green">3</div>
+        <div class="stat-label">عملات مدعومة</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Features -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-badge">✦ مميزاتنا</span>
+      <h2 class="section-title">لماذا <span class="highlight">دراجتك</span>؟</h2>
+      <p class="section-subtitle">صممنا التطبيق بعناية لتجربة بيع وشراء سلسة وآمنة. كل الأدوات اللي تحتاجها في مكان واحد.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon-wrapper blue">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        </div>
+        <h3>إعلانات قريبة منك</h3>
+        <p>فعّل موقعك وشوف الإعلانات حولك. اعرف كم تبعد كل دراجة عنك بالضبط. الإعلانات القريبة تظهر أولاً.</p>
+      </div>
+      <div class="feature-card reveal" style="--delay:.08s">
+        <div class="feature-icon-wrapper orange">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        </div>
+        <h3>محادثات فورية</h3>
+        <p>تواصل مع البائعين مباشرة داخل التطبيق. رسائل نصية، صور، وملاحظات صوتية. كل شي في محادثة واحدة.</p>
+      </div>
+      <div class="feature-card reveal" style="--delay:.16s">
+        <div class="feature-icon-wrapper green">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M12 12.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM9 2 7.2 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.2L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>
+        </div>
+        <h3>إعلانات احترافية</h3>
+        <p>أضف صور متعددة لإعلانك بجودة عالية. صور مصغرة للتحميل السريع. تحكم كامل في تفاصيل الإعلان.</p>
+      </div>
+      <div class="feature-card reveal" style="--delay:.24s">
+        <div class="feature-icon-wrapper purple">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M21.4 11 12.4 2A2 2 0 0 0 11 1.4H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .6 1.4l9 9a2 2 0 0 0 2.8 0l7-7a2 2 0 0 0 0-2.8zM6.5 8A1.5 1.5 0 1 1 8 6.5 1.5 1.5 0 0 1 6.5 8z"/></svg>
+        </div>
+        <h3>أقسام متعددة</h3>
+        <p>دراجات نارية، هوائية، سكوتر، قطع غيار، وإكسسوارات. فلتر حسب القسم والماركة والمدينة والسعر.</p>
+      </div>
+      <div class="feature-card reveal" style="--delay:.32s">
+        <div class="feature-icon-wrapper red">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="m12 17.3 6.2 3.7-1.6-7.1 5.4-4.7-7.1-.6L12 2 9.1 8.6 2 9.2l5.4 4.7L5.8 21z"/></svg>
+        </div>
+        <h3>تقييم البائعين</h3>
+        <p>قيّم البائع بعد الشراء. شوف تقييمات البائعين قبل ما تتواصل معهم. نظام تقييم موثوق وشفاف.</p>
+      </div>
+      <div class="feature-card reveal" style="--delay:.4s">
+        <div class="feature-icon-wrapper teal">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm6.5-6V11c0-3.07-1.64-5.64-4.5-6.32V4a2 2 0 0 0-4 0v.68C7.14 5.36 5.5 7.92 5.5 11v5l-2 2v1h17v-1l-2-2z"/></svg>
+        </div>
+        <h3>إشعارات ذكية</h3>
+        <p>توصلك إشعارات فورية عند الموافقة على إعلانك، رسالة جديدة، أو أي تحديث يهمك. لا يفوتك شي.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section section-alt" id="how-it-works">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-badge">⚡ البداية</span>
+      <h2 class="section-title">كيف يعمل <span class="highlight">دراجتك</span>؟</h2>
+      <p class="section-subtitle">ثلاث خطوات بسيطة وتبدأ رحلة البيع أو الشراء</p>
+    </div>
+    <div class="steps">
+      <span class="steps-connector" aria-hidden="true"></span>
+      <div class="step reveal">
+        <div class="step-circle one">1</div>
+        <h3>أضف إعلانك</h3>
+        <p>صوّر دراجتك، حدد السعر والمدينة والقسم. فعّل موقعك ليظهر إعلانك للمشترين القريبين منك.</p>
+      </div>
+      <div class="step reveal" style="--delay:.12s">
+        <div class="step-circle two">2</div>
+        <h3>تواصل مع البائع</h3>
+        <p>تصفّح الإعلانات، شوف التفاصيل والصور، وتواصل مع البائع مباشرة عبر المحادثة الفورية داخل التطبيق.</p>
+      </div>
+      <div class="step reveal" style="--delay:.24s">
+        <div class="step-circle three">3</div>
+        <h3>استلم دراجتك</h3>
+        <p>اتفق مع البائع على السعر والمكان المناسب، استلم دراجتك، وقيّم البائع لمساعدة المجتمع.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Screenshots -->
+<section class="section" id="screenshots">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-badge">📱 معرض التطبيق</span>
+      <h2 class="section-title">واجهة <span class="highlight">جميلة وسهلة</span></h2>
+      <p class="section-subtitle">تصميم عصري باللغة العربية. تجربة سلسة ومريحة للمستخدم.</p>
+    </div>
+  </div>
+  <div class="screenshots-scroll" id="shots">
+    <div class="shot-phone reveal">
+      <div class="shot-screen home">
+        <div class="shot-bar"><span></span><span class="dot"></span></div>
+        <div class="shot-search"></div>
+        <div class="shot-chips"><i class="on"></i><i></i><i></i></div>
+        <div class="shot-tile"></div>
+        <div class="shot-tile"></div>
+      </div>
+      <span class="shot-label">الصفحة الرئيسية</span>
+    </div>
+    <div class="shot-phone reveal" style="--delay:.1s">
+      <div class="shot-screen chat">
+        <div class="shot-bar"><span></span><span class="dot"></span></div>
+        <div class="bubble in"></div>
+        <div class="bubble out"></div>
+        <div class="bubble in sm"></div>
+        <div class="bubble out sm"></div>
+        <div class="shot-input"></div>
+      </div>
+      <span class="shot-label">المحادثات الفورية</span>
+    </div>
+    <div class="shot-phone reveal" style="--delay:.2s">
+      <div class="shot-screen add">
+        <div class="shot-bar"><span></span><span class="dot"></span></div>
+        <div class="shot-upload"><span>+</span></div>
+        <div class="shot-line"></div>
+        <div class="shot-line sm"></div>
+        <div class="shot-btn"></div>
+      </div>
+      <span class="shot-label">إضافة إعلان</span>
+    </div>
+    <div class="shot-phone reveal" style="--delay:.3s">
+      <div class="shot-screen profile">
+        <div class="shot-bar"><span></span><span class="dot"></span></div>
+        <div class="shot-avatar"></div>
+        <div class="shot-stars">★★★★★</div>
+        <div class="shot-line"></div>
+        <div class="shot-tile sm"></div>
+      </div>
+      <span class="shot-label">الملف الشخصي</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="container narrow">
+    <div class="section-header reveal">
+      <span class="section-badge">؟ الأسئلة الشائعة</span>
+      <h2 class="section-title">عندك <span class="highlight">سؤال</span>؟</h2>
+      <p class="section-subtitle">جمعنا لك أكثر الأسئلة شيوعاً عن التطبيق</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          هل التطبيق مجاني؟
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>نعم، تحميل التطبيق وإضافة الإعلانات والتواصل مع البائعين كلها مجانية تماماً.</p></div>
+      </div>
+      <div class="faq-item reveal" style="--delay:.06s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          كيف تظهر الإعلانات القريبة مني؟
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>عند تفعيل خاصية الموقع، يعرض لك التطبيق الإعلانات حولك مرتبة حسب المسافة، مع عرض كم تبعد كل دراجة عنك.</p></div>
+      </div>
+      <div class="faq-item reveal" style="--delay:.12s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          هل بياناتي وموقعي آمنة؟
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>نعم، نحرص على حماية خصوصيتك. لا نخزّن موقعك الدقيق بشكل دائم، ويمكنك مراجعة سياسة الخصوصية لمعرفة التفاصيل.</p></div>
+      </div>
+      <div class="faq-item reveal" style="--delay:.18s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          ما أنواع الدراجات المتاحة؟
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>دراجات نارية، هوائية، سكوتر، إضافة إلى قطع الغيار والإكسسوارات. تقدر تفلتر حسب القسم والماركة والمدينة والسعر.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section section" id="download">
+  <div class="container">
+    <div class="cta-content reveal">
+      <span class="cta-glow" aria-hidden="true"></span>
+      <h2>جاهز تبدأ رحلتك؟ 🏍️</h2>
+      <p>حمّل تطبيق دراجتك الآن وابدأ بيع وشراء الدراجات. التطبيق مجاني وسهل الاستخدام.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-lg btn-store">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M3.6 1.8 13 11.2l2.6-2.6L4.9 2.5C4.5 2.2 4 2 3.6 1.8zM2.3 2.9C2.1 3.2 2 3.6 2 4v16c0 .4.1.8.3 1.1L11.6 12 2.3 2.9zm14.9 6.9 2.9 1.7c1.2.7 1.2 2.4 0 3.1l-2.9 1.7L14.4 13l2.8-3.2zM4.9 21.5l10.7-6.1L13 12.8l-9.4 9.4c.4-.2.9-.4 1.3-.7z"/></svg>
+          تحميل من قوقل بلاي
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <span class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.44 9.03 15.41 5H11v2h3.59l2 2H5c-2.8 0-5 2.2-5 5s2.2 5 5 5c2.46 0 4.45-1.69 4.9-4h1.65l2.77-2.77c-.21.54-.32 1.14-.32 1.77 0 2.8 2.2 5 5 5s5-2.2 5-5c0-2.79-2.2-4.97-4.56-4.97zM7.82 15C7.4 16.15 6.28 17 5 17c-1.63 0-3-1.37-3-3s1.37-3 3-3c1.28 0 2.4.85 2.82 2H5v2h2.82zM19 17c-1.63 0-3-1.37-3-3s1.37-3 3-3 3 1.37 3 3-1.37 3-3 3z"/></svg>
+          </span>
+          دراجتك
+        </div>
+        <p>سوق الدراجات الأول في اليمن. منصة وسيطة لبيع وشراء الدراجات النارية والهوائية وقطع الغيار والإكسسوارات.</p>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#features">المميزات</a></li>
+          <li><a href="#how-it-works">كيف يعمل</a></li>
+          <li><a href="#screenshots">معرض التطبيق</a></li>
+          <li><a href="#download">تحميل التطبيق</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>قانوني</h4>
+        <ul>
+          <li><a href="privacy">سياسة الخصوصية</a></li>
+          <li><a href="terms">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><a href="mailto:support@drejtak.com">📧 support@drejtak.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 دراجتك. جميع الحقوق محفوظة.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
